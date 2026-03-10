@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perhitungan Luas Bangun Datar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Perhitungan Luas</h1>
+
+        <div class="section">
+            <h3>Persegi Panjang</h3>
+
+            <input type="number" id="panjang" placeholder="Masukkan panjang">
+            <input type="number" id="lebar" placeholder="Masukkan lebar">
+
+            <button type="button" onclick="hitungPersegiPanjang()">Hitung Luas</button>
+            
+            <div class="alert" id="alertNoInputPersegiPanjang"></div>
+
+            <div class="result" id="hasilPersegiPanjang"></div>
+        </div>
+
+        <div class="section">
+            <h3>Bujur Sangkar</h3>
+
+            <input type="number" id="sisi" placeholder="Masukkan panjang sisi">
+
+            <button type="button" onclick="hitungBujurSangkar()">Hitung Luas</button>
+
+            <div class="alert" id="alertNoInputBujurSangkar"></div>
+
+            <div class="result" id="hasilBujurSangkar"></div>
+        </div>
+
+        <div class="section">
+            <h3>Segitiga</h3>
+
+            <input type="number" id="alas" placeholder="Masukkan alas">
+            <input type="number" id="tinggi" placeholder="Masukkan tinggi">
+
+            <button type="button" onclick="hitungSegitiga()">Hitung Luas</button>
+
+            <div class="alert" id="alertNoInputSegitiga"></div>
+
+            <div class="result" id="hasilSegitiga"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
